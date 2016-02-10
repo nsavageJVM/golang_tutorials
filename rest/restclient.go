@@ -84,5 +84,3 @@ func urlEncoded(str string) (string, error) {
 	}
 	return u.String(), nil
 }
-
-//http://localhost:8080/fish/oauth2callback?state=state&code=4/cBaIyVG3bsCfpramR-fid_BQLny659kUODyaPfdrh6Y&authuser=0&session_state=336ab77834621517e2aedff1d2ed467f178adc6e..f721&prompt=consent#

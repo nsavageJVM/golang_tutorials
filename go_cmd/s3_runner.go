@@ -57,8 +57,6 @@ func main() {
 		fmt.Println(resp2)
 
 	}
-
-
 }
 
 func check(err error) {
