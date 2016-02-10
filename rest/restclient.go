@@ -10,7 +10,6 @@ import (
 
 )
 
-//https://accounts.google.com/o/oauth2/auth?redirect_uri=https%3A%2F%2Fdevelopers.google.com%2Foauthplayground&response_type=code&client_id=407408718192.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&approval_prompt=force&access_type=offline
 
 // upper case first letter === public
 func TestScope(mssg string ) {
@@ -38,9 +37,9 @@ func GetGoogleSignInToken() {
 func GetGoogleAPIToken () {
 
 	conf := &oauth2.Config{
-		ClientID:     "209261178694-hcv1i5shedrurqeu6fc1he5gg30boas4.apps.googleusercontent.com",
-		ClientSecret: "eS2xz0Za02zvRPr3uia8YJlN",
-		RedirectURL:  "http://localhost:8080/fish/oauth2callback",
+		ClientID:     "<your client id>",
+		ClientSecret: "<your client secret>",
+		RedirectURL:  "<your callback url>",
 		Scopes: []string{
 			"openid email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile",
 		},
